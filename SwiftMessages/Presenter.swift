@@ -37,8 +37,8 @@ class Presenter: NSObject {
         }
     }
     
-    var config: SwiftMessages.Config
     let view: UIView
+    var config: SwiftMessages.Config
     weak var delegate: PresenterDelegate?
     lazy var maskingView: MaskingView = { return MaskingView() }()
     var presentationContext = PresentationContext.viewController(Weak<UIViewController>(value: nil))
